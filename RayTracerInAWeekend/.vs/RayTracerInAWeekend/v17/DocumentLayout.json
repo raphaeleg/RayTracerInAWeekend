@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:color.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\ray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:ray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:color.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ray.hpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\ray.hpp",
+              "RelativeDocumentMoniker": "ray.hpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\ray.hpp",
+              "RelativeToolTip": "ray.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-08T06:33:21.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "color.hpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp",
               "RelativeDocumentMoniker": "color.hpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp",
               "RelativeToolTip": "color.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-08T06:18:25.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "vec3.hpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp",
-              "RelativeDocumentMoniker": "vec3.hpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp",
-              "RelativeToolTip": "vec3.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-08T05:54:42.416Z"
+              "WhenOpened": "2024-06-08T06:18:25.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +58,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAgAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-08T02:21:41.859Z",
               "EditorCaption": ""

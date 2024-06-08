@@ -1,6 +1,6 @@
 ﻿  main.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\print(11): warning STL4038: The contents of <print> are available only with C++23 or later.
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(24,16): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(24,16): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(24,16): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(42,9): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(42,34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(56,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(56,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   RayTracerInAWeekend.vcxproj -> C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\x64\Debug\RayTracerInAWeekend.exe

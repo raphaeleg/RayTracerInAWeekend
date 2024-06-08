@@ -9,6 +9,7 @@ public:
 	float y;
 	float z;
 	vec3() : x{ 0 }, y{ 0 }, z{ 0 } {}
+	vec3(float e) : x{ e }, y{ e }, z{ e } {}
 	vec3(float e0, float e1, float e2) : x{ e0 }, y{ e1 }, z{ e2 } {}
 
 	vec3 operator-() const { return vec3(-x, -y, -z); }
@@ -63,7 +64,7 @@ inline vec3 operator*(float t, const vec3& v) {
 inline vec3 operator*(const vec3& v, float t) {
 	return t * v;
 }
-inline vec3 operator/(const vec3& v, double t) {
+inline vec3 operator/(const vec3& v, float t) {
 	return (1 / t) * v;
 }
 inline float dot(const vec3& u, const vec3& v) {
