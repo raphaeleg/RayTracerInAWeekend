@@ -1,6 +1,6 @@
 ﻿  main.cpp
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(42,9): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(42,34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(56,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(56,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(54,9): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(54,34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(68,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\main.cpp(68,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   RayTracerInAWeekend.vcxproj -> C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\x64\Debug\RayTracerInAWeekend.exe
