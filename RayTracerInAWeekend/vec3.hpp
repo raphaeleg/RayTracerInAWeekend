@@ -1,7 +1,4 @@
 #pragma once
-#include <iostream>
-
-using std::sqrt;
 
 class vec3 {
 public:

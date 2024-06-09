@@ -1,9 +1,7 @@
-#include <iostream>
-#include "color.hpp"
-#include "ray.hpp"
-#include "vec3.hpp"
-
-static constexpr auto ASPECT_RATIO = 16.0 / 9.0;
+#include "constants.hpp"
+#include "hittable.hpp"
+#include "hittable_list.hpp"
+#include "sphere.hpp"
 
 struct Dimension
 {
@@ -36,27 +34,25 @@ struct Camera {
 	}
 };
 
-static bool hit_sphere(const point3& center, double radius, const ray& r) {
-	vec3 oc = center - r.origin();
-	auto a = dot(r.direction(), r.direction());
-	auto b = -2.0 * dot(r.direction(), oc);
-	auto c = dot(oc, oc) - radius * radius;
-	auto discriminant = b * b - 4 * a * c;
-	return (discriminant >= 0);
-}
-
-color ray_color(const ray& r) {
-	if (hit_sphere(point3(0, 0, -1), 0.5, r)) {
-		return color(1, 0, 0);
+color ray_color(const ray& r, const hittable& world) {
+	hit_record rec;
+	if (world.hit(r, interval(0, INF), rec)) {
+		return 0.5 * (rec.normal + color(1, 1, 1));
 	}
+
 	vec3 unit_direction = unit_vector(r.direction());
 	auto a = 0.5 * (unit_direction.y + 1.0);
-	return (1.0 - a) * vec3(1.0f) + a * vec3(0.5f, 0.7f, 1.0f);
+	return (1.0 - a) * color(1.0, 1.0, 1.0) + a * color(0.5, 0.7, 1.0);
 }
 
 int main() {
 	float img_width = 400;
 	Dimension image { img_width, float(std::max(1, int(img_width / ASPECT_RATIO))) };
+
+	hittable_list world;
+	world.add(make_shared<sphere>(point3(0, 0, -1), 0.5));
+	world.add(make_shared<sphere>(point3(0, -100.5, -1), 100));
+
 	Camera cam{2.0f,image};
 	std::clog << "image: " << img_width << "x"<< int(img_width / ASPECT_RATIO) << "\nviewport: "<<cam.viewport.w<<"x"<<cam.viewport.h<<"\n";
 
@@ -69,7 +65,7 @@ int main() {
 			auto ray_direction = pixel_center - cam.center;
 			ray r(cam.center, ray_direction); // could be made into a unit vector
 
-			color pixel_color = ray_color(r);
+			color pixel_color = ray_color(r, world);
 			write_color(std::cout, pixel_color);
 		}
 	}
