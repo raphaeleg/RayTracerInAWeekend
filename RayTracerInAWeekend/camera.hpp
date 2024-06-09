@@ -24,6 +24,7 @@ public:
 		pixel_delta_y = viewport_y / image.h;
 		upperLeftViewport = center - vec3(0, 0, focal_length) - viewport_x / 2 - viewport_y / 2;
 		pixel00_loc = upperLeftViewport + 0.5 * (pixel_delta_x + pixel_delta_y);
+		pixel_samples_scale = 1.0 / SAMPLES_PER_PIXEL;
 	}
 
 	void render(const hittable& world) {
@@ -33,12 +34,12 @@ public:
 		for (int y = 0; y < image.h; y++) {
 			std::clog << "\rScanlines remaining: " << (image.h - y) << ' ' << std::flush;
 			for (int x = 0; x < image.w; x++) {
-				auto pixel_center = pixel00_loc + (x * pixel_delta_x) + (y * pixel_delta_y);
-				auto ray_direction = pixel_center - center;
-				ray r(center, ray_direction); // could be made into a unit vector
-
-				color pixel_color = ray_color(r, world);
-				write_color(std::cout, pixel_color);
+				color pixel_color(0, 0, 0);
+				for (int sample = 0; sample < SAMPLES_PER_PIXEL; sample++) {
+					ray r = get_ray(x,y);
+					pixel_color += ray_color(r, world);
+				}
+				write_color(std::cout, pixel_samples_scale * pixel_color);
 			}
 		}
 		std::clog << "\rDone.                      \n";
@@ -53,7 +54,28 @@ private:
 	vec3 pixel_delta_y;
 	vec3 upperLeftViewport;
 	vec3 pixel00_loc;
+	float pixel_samples_scale;  // Color scale factor for a sum of pixel samples
 	
+	ray get_ray(int i, int j) const {
+		// Construct a camera ray originating from the origin and directed at randomly sampled
+		// point around the pixel location i, j.
+
+		auto offset = sample_square();
+		auto pixel_sample = pixel00_loc
+			+ ((i + offset.x) * pixel_delta_x)
+			+ ((j + offset.y) * pixel_delta_y);
+
+		auto ray_origin = center;
+		auto ray_direction = pixel_sample - ray_origin;
+
+		return ray(ray_origin, ray_direction);
+	}
+
+	vec3 sample_square() const {
+		// Returns the vector to a random point in the [-.5,-.5]-[+.5,+.5] unit square.
+		return vec3(random_float() - 0.5, random_float() - 0.5, 0);
+	}
+
 	color ray_color(const ray& r, const hittable& world) const {
 		hit_record rec;
 		if (world.hit(r, interval(0, INF), rec)) {
