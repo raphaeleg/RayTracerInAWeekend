@@ -136,6 +136,7 @@
     <ClInclude Include="hittable.hpp" />
     <ClInclude Include="hittable_list.hpp" />
     <ClInclude Include="interval.hpp" />
+    <ClInclude Include="material.hpp" />
     <ClInclude Include="ray.hpp" />
     <ClInclude Include="sphere.hpp" />
     <ClInclude Include="vec3.hpp" />

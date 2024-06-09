@@ -8,6 +8,7 @@
 using std::make_shared;
 using std::shared_ptr;
 using std::sqrt;
+using std::fabs;
 
 static constexpr auto ASPECT_RATIO = 16.0 / 9.0;
 static constexpr auto SAMPLES_PER_PIXEL = 100;

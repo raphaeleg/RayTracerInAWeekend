@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:color.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\constants.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:constants.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:material.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:sphere.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\hittable.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:hittable.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\hittable_list.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:hittable_list.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\constants.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:constants.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,108 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "color.hpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp",
-              "RelativeDocumentMoniker": "color.hpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\color.hpp",
-              "RelativeToolTip": "color.hpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-09T15:48:49.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "sphere.hpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\sphere.hpp",
               "RelativeDocumentMoniker": "sphere.hpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\sphere.hpp",
               "RelativeToolTip": "sphere.hpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-09T14:58:11.378Z",
+              "WhenOpened": "2024-06-09T16:18:44.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "hittable_list.hpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\hittable_list.hpp",
-              "RelativeDocumentMoniker": "hittable_list.hpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\hittable_list.hpp",
-              "RelativeToolTip": "hittable_list.hpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAbAAAA",
+              "DocumentIndex": 3,
+              "Title": "camera.hpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp",
+              "RelativeDocumentMoniker": "camera.hpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp",
+              "RelativeToolTip": "camera.hpp",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-09T14:57:55.511Z",
+              "WhenOpened": "2024-06-09T16:10:50.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "hittable.hpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\hittable.hpp",
-              "RelativeDocumentMoniker": "hittable.hpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\hittable.hpp",
-              "RelativeToolTip": "hittable.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "DocumentIndex": 0,
+              "Title": "material.hpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp",
+              "RelativeDocumentMoniker": "material.hpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp",
+              "RelativeToolTip": "material.hpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADEAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-09T14:57:17.709Z",
+              "WhenOpened": "2024-06-09T16:06:09.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "constants.hpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\constants.hpp",
               "RelativeDocumentMoniker": "constants.hpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\constants.hpp",
               "RelativeToolTip": "constants.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-09T14:51:14.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "vec3.hpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp",
               "RelativeDocumentMoniker": "vec3.hpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp",
               "RelativeToolTip": "vec3.hpp",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEkAAAAfAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-09T10:20:43.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "camera.hpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp",
-              "RelativeDocumentMoniker": "camera.hpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp",
-              "RelativeToolTip": "camera.hpp",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAFIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-09T06:09:23.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-08T02:21:41.859Z",
               "EditorCaption": ""

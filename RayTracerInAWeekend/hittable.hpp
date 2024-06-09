@@ -1,11 +1,14 @@
 #pragma once
 
+class material;
+
 class hit_record {
 public:
 	point3 p{ 0 };
 	vec3 normal{ 0 };
 	float t = 0;
 	bool front_face = false;
+	shared_ptr<material> mat;
 
 	void set_face_normal(const ray& r, const vec3& outward_normal) {
 		front_face = dot(r.direction(), outward_normal) < 0;

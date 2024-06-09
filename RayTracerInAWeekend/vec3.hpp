@@ -35,6 +35,10 @@ public:
 	}
 	float length() const { return sqrt(length_squared()); }
 	float length_squared() const { return x * x + y * y + z * z; }
+	bool near_zero() const {
+		auto s = 1e-8;
+		return (fabs(x) < s) && (fabs(y) < s) && (fabs(z) < s);
+	}
 	static vec3 random() {
 		return vec3(random_float(), random_float(), random_float());
 	}
@@ -82,3 +86,4 @@ inline vec3 random_on_hemisphere(const vec3& normal) {
 	vec3 on_unit_sphere = random_unit_vector();
 	return dot(on_unit_sphere, normal) > 0.0 ? on_unit_sphere : -on_unit_sphere;
 }
+inline vec3 reflect(const vec3& v, const vec3& n) { return v - 2 * dot(v, n) * n; }
