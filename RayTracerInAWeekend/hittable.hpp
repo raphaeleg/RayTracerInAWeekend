@@ -2,14 +2,12 @@
 
 class hit_record {
 public:
-	point3 p;
-	vec3 normal;
-	float t;
-	bool front_face;
+	point3 p{ 0 };
+	vec3 normal{ 0 };
+	float t = 0;
+	bool front_face = false;
 
 	void set_face_normal(const ray& r, const vec3& outward_normal) {
-		// NOTE: the parameter `outward_normal` is assumed to have unit length.
-
 		front_face = dot(r.direction(), outward_normal) < 0;
 		normal = front_face ? outward_normal : -outward_normal;
 	}

@@ -37,7 +37,7 @@ public:
 				color pixel_color(0, 0, 0);
 				for (int sample = 0; sample < SAMPLES_PER_PIXEL; sample++) {
 					ray r = get_ray(x,y);
-					pixel_color += ray_color(r, world);
+					pixel_color += ray_color(r,MAX_DEPTH, world);
 				}
 				write_color(std::cout, pixel_samples_scale * pixel_color);
 			}
@@ -65,10 +65,9 @@ private:
 			+ ((i + offset.x) * pixel_delta_x)
 			+ ((j + offset.y) * pixel_delta_y);
 
-		auto ray_origin = center;
-		auto ray_direction = pixel_sample - ray_origin;
+		auto ray_direction = pixel_sample - center;
 
-		return ray(ray_origin, ray_direction);
+		return ray(center, ray_direction);
 	}
 
 	vec3 sample_square() const {
@@ -76,10 +75,12 @@ private:
 		return vec3(random_float() - 0.5, random_float() - 0.5, 0);
 	}
 
-	color ray_color(const ray& r, const hittable& world) const {
+	color ray_color(const ray& r, int depth, const hittable& world) const {
+		if (depth <= 0) { return color(0, 0, 0); }
 		hit_record rec;
-		if (world.hit(r, interval(0, INF), rec)) {
-			return 0.5 * (rec.normal + color(1, 1, 1));
+		if (world.hit(r, interval(0.001, INF), rec)) {
+			vec3 dir = rec.normal+random_unit_vector(); // lambertian: rays will go around normal of surface
+			return 0.5 * ray_color(ray(rec.p, dir), depth-1, world);
 		}
 
 		vec3 unit_direction = unit_vector(r.direction());
