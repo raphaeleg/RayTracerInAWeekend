@@ -9,21 +9,21 @@
 int main() {
 	hittable_list world;
 	
-    auto material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
-    auto material_center = make_shared<lambertian>(color(0.1, 0.2, 0.5));
-    auto material_left = make_shared<dielectric>(1.50);
-    auto material_bubble = make_shared<dielectric>(1.00 / 1.50);
-    auto material_right = make_shared<metal>(color(0.8, 0.6, 0.2), 1.0);
+    auto material_ground = make_shared<lambertian>(color(0.8f, 0.8f, 0.0f));
+    auto material_center = make_shared<lambertian>(color(0.1f, 0.2f, 0.5f));
+    auto material_left = make_shared<dielectric>(1.50f);
+    auto material_bubble = make_shared<dielectric>(1.00f / 1.50f);
+    auto material_right = make_shared<metal>(color(0.8f, 0.6f, 0.2f), 1.0f);
 
-    world.add(make_shared<sphere>(point3(0.0, -100.5, -1.0), 100.0, material_ground));
-    world.add(make_shared<sphere>(point3(0.0, 0.0, -1.2), 0.5, material_center));
-    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0), 0.5, material_left));
-    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0), 0.4, material_bubble));
-    world.add(make_shared<sphere>(point3(1.0, 0.0, -1.0), 0.5, material_right));
+    world.add(make_shared<sphere>(point3(0.0f, -100.5f, -1.0f), 100.0f, material_ground));
+    world.add(make_shared<sphere>(point3(0.0f, 0.0f, -1.2f), 0.5f, material_center));
+    world.add(make_shared<sphere>(point3(-1.0f, 0.0f, -1.0f), 0.5f, material_left));
+    world.add(make_shared<sphere>(point3(-1.0f, 0.0f, -1.0f), 0.4f, material_bubble));
+    world.add(make_shared<sphere>(point3(1.0f, 0.0f, -1.0f), 0.5f, material_right));
 
-    point3 lf(-2, 2, 1);
-    point3 la(0, 0, -1);
-    vec3 vu(0, 1, 0);
-    camera cam(lf,la,vu, 20.0f);
+    point3 lf(-2.0f, 2.0f, 1.0f);
+    point3 la(0.0f, 0.0f, -1.0f);
+    vec3 vu(0.0f, 1.0f, 0.0f);
+    camera cam(lf,la,vu, 20.0f,10.0f,3.4f);
 	cam.render(world);
 }

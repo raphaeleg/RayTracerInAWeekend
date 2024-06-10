@@ -15,20 +15,21 @@ struct Dimension
 class camera {
 public:
 	float img_width = 400;
-	Dimension image{ img_width, float(std::max(1, int(img_width / ASPECT_RATIO))) };
+	Dimension image{ img_width, float(fmax(1, int(img_width / ASPECT_RATIO))) };
 
-	camera(point3 lf, point3 la, vec3 vu, float vf) {
+	camera(point3 lf, point3 la, vec3 vu, float vf, float defocus_angle, float focus_d) {
 		lookfrom = lf;
 		lookat = la;
 		vup = vu;
 		v_fov = vf;
+		dof_angle = defocus_angle;
+		focus_dist = focus_d;
 
 		center = lookfrom;
 
-		focal_length = (lookfrom - lookat).length();
 		auto theta = degrees_to_radians(v_fov);
 		auto h = tan(theta / 2);
-		auto viewport_height = 2 * h * focal_length;
+		auto viewport_height = 2 * h * focus_dist;
 		viewport = Dimension{ viewport_height * float(ASPECT_RATIO), viewport_height };
 
 		w = unit_vector(lookfrom - lookat);
@@ -37,14 +38,15 @@ public:
 
 		viewport_x = viewport.w * u;
 		viewport_y = viewport.h * -v;
-
 		pixel_delta_x = viewport_x / image.w;
 		pixel_delta_y = viewport_y / image.h;
 
-		upperLeftViewport = center - (focal_length * w) - viewport_x / 2 - viewport_y / 2;
+		auto upperLeftViewport = center - (focus_dist * w) - viewport_x / 2 - viewport_y / 2;
 		pixel00_loc = upperLeftViewport + 0.5 * (pixel_delta_x + pixel_delta_y);
 
-		pixel_samples_scale = 1.0 / SAMPLES_PER_PIXEL;
+		auto defocus_radius = focus_dist * tan(degrees_to_radians(dof_angle / 2));
+		dof_disk_x = u * defocus_radius;
+		dof_disk_y = v * defocus_radius;
 	}
 
 	void render(const hittable& world) {
@@ -65,22 +67,28 @@ public:
 		std::clog << "\rDone.                      \n";
 	}
 private:
-	float focal_length = 1.0;
-	point3 lookfrom = point3(0, 0, 0);   // Point camera is looking from
-	point3 lookat = point3(0, 0, -1);  // Point camera is looking at
-	vec3   vup = vec3(0, 1, 0);     // Camera-relative "up" direction
+	float focal_length = 1.0f;
+	point3 lookfrom{ 0.0f };   // Point camera is looking from
+	point3 lookat = { 0.0f, 0.0f, -1.0f };  // Point camera is looking at
+	vec3 vup{ 0.0f, 1.0f, 0.0f };     // Camera-relative "up" direction
+	float dof_angle = 0.0f;
+	float focus_dist = 10.0f;
+	vec3 dof_disk_x{ 0.0 };
+	vec3 dof_disk_y{ 0.0 };
+	
 	Dimension viewport;
-	point3 center{ 0,0,0 };
-	vec3 viewport_x;
-	vec3 viewport_y;
-	vec3 pixel_delta_x;
-	vec3 pixel_delta_y;
-	vec3 upperLeftViewport;
-	vec3 pixel00_loc;
-	float pixel_samples_scale;
+	point3 center{ 0.0f };
+	vec3 viewport_x{ 0.0f };
+	vec3 viewport_y{ 0.0f };
+	vec3 pixel_delta_x{ 0.0f };
+	vec3 pixel_delta_y{ 0.0f };
+	vec3 pixel00_loc{ 0.0f };
+	float pixel_samples_scale = float(1.0f / SAMPLES_PER_PIXEL);
 
 	float v_fov = 90.0f;
-	vec3   u, v, w;
+	vec3 u{ 0.0f };
+	vec3 v{ 0.0f };
+	vec3 w{ 0.0f };
 	
 	ray get_ray(int i, int j) const {
 		auto offset = sample_square();
@@ -88,27 +96,31 @@ private:
 			+ ((i + offset.x) * pixel_delta_x)
 			+ ((j + offset.y) * pixel_delta_y);
 
-		auto ray_direction = pixel_sample - center;
+		auto ray_origin = (dof_angle <= 0) ? center : defocus_disk_sample();
+		auto ray_direction = pixel_sample - ray_origin;
 
-		return ray(center, ray_direction);
+		return ray(ray_origin, ray_direction);
 	}
 
 	vec3 sample_square() const {
-		// Returns the vector to a random point in the [-.5,-.5]-[+.5,+.5] unit square.
-		return vec3(random_float() - 0.5, random_float() - 0.5, 0);
+		return vec3(random_float() - 0.5f, random_float() - 0.5f, 0.0f);
+	}
+	point3 defocus_disk_sample() const {
+		auto p = random_in_unit_disk();
+		return center + (p[0] * dof_disk_x) + (p[1] * dof_disk_y);
 	}
 
 	color background_render(const ray& r) const {
 		vec3 unit_direction = unit_vector(r.direction());
-		auto a = 0.5 * (unit_direction.y + 1.0);
-		return (1.0 - a) * color(1.0, 1.0, 1.0) + a * color(0.5, 0.7, 1.0); // blend
+		float a = 0.5f * (unit_direction.y + 1.0f);
+		return (1.0f - a) * color(1.0f, 1.0f, 1.0f) + a * color(0.5f, 0.7f, 1.0f); // blend
 	}
 
 	color ray_color(const ray& r, int depth, const hittable& world) const {
 		if (depth <= 0) { return color(0, 0, 0); }
 		hit_record rec;
 
-		bool obj_hit = world.hit(r, interval(0.001, INF), rec);
+		bool obj_hit = world.hit(r, interval(0.001f, INF), rec);
 
 		if (!obj_hit) { return background_render(r); }
 

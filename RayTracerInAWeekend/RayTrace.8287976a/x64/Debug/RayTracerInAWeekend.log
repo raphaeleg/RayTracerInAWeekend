@@ -1,53 +1,8 @@
 ﻿  main.cpp
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\constants.hpp(21,70): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\material.hpp(62,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\vec3.hpp(92,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\vec3.hpp(92,20): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\vec3.hpp(93,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\color.hpp(6,32): warning C4305: 'initializing': truncation from 'double' to 'const float'
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\color.hpp(17,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\color.hpp(18,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\color.hpp(19,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\color.hpp(21,41): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(33,29): warning C4305: '=': truncation from 'double' to 'float'
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(81,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(81,30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(87,10): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(87,60): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(87,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\camera.hpp(94,40): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file 'main.cpp')
-  
-C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\sphere.hpp(6,95): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\material.hpp(82,19): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
 LINK : fatal error LNK1168: cannot open C:\Users\admin\Documents\GitHub\RayTracerInAWeekend\RayTracerInAWeekend\x64\Debug\RayTracerInAWeekend.exe for writing

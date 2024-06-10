@@ -17,7 +17,7 @@ static constexpr float PI = 3.1415926535897932385f;
 static constexpr auto MAX_DEPTH = 50;
 
 
-inline float degrees_to_radians(float degrees) { return degrees * PI / 180.0; }
+inline float degrees_to_radians(float degrees) { return degrees * PI / 180.0f; }
 inline float random_float() {
     static std::uniform_real_distribution<float> distribution(0.0, 1.0);
     static std::mt19937 generator;

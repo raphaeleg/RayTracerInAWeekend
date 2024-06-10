@@ -3,7 +3,7 @@
 
 class sphere : public hittable {
 public:
-	sphere(const point3& center, float radius, shared_ptr<material> mat) : center(center), radius(fmax(0, radius)), mat(mat) {}
+	sphere(const point3& center, float radius, shared_ptr<material> mat) : center(center), radius(fmax(0.0f, radius)), mat(mat) {}
     bool hit(const ray& r, interval ray_t, hit_record& rec) const override {
 		vec3 oc = center - r.origin();
 		auto a = r.direction().length_squared();

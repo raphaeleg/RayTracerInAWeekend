@@ -3,9 +3,9 @@
 #include "interval.hpp"
 
 using color = vec3;
-static constexpr float INT_MAP = 255.999; // Translate the [0,1] component values to the byte range [0,255].
+static constexpr float INT_MAP = 255.999f; // Translate the [0,1] component values to the byte range [0,255].
 
-inline double linear_to_gamma(double linear_component){
+inline float linear_to_gamma(float linear_component){
 	return (linear_component > 0) ? sqrt(linear_component) : 0;
 }
 
@@ -18,7 +18,7 @@ void write_color(std::ostream& out, const color& pixel_color) {
 	g = linear_to_gamma(g);
 	b = linear_to_gamma(b);
 
-	static const interval intensity(0.000, 0.999);
+	static const interval intensity(0.000f, 0.999f);
 	int rbyte = int(256 * intensity.clamp(r));
 	int gbyte = int(256 * intensity.clamp(g));
 	int bbyte = int(256 * intensity.clamp(b));
