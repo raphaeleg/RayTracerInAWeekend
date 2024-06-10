@@ -17,14 +17,33 @@ public:
 	float img_width = 400;
 	Dimension image{ img_width, float(std::max(1, int(img_width / ASPECT_RATIO))) };
 
-	camera(float viewport_height) {
+	camera(point3 lf, point3 la, vec3 vu, float vf) {
+		lookfrom = lf;
+		lookat = la;
+		vup = vu;
+		v_fov = vf;
+
+		center = lookfrom;
+
+		focal_length = (lookfrom - lookat).length();
+		auto theta = degrees_to_radians(v_fov);
+		auto h = tan(theta / 2);
+		auto viewport_height = 2 * h * focal_length;
 		viewport = Dimension{ viewport_height * float(ASPECT_RATIO), viewport_height };
-		viewport_x = vec3(viewport.w, 0, 0);
-		viewport_y = vec3(0, -viewport.h, 0);
+
+		w = unit_vector(lookfrom - lookat);
+		u = unit_vector(cross(vup, w));
+		v = cross(w, u);
+
+		viewport_x = viewport.w * u;
+		viewport_y = viewport.h * -v;
+
 		pixel_delta_x = viewport_x / image.w;
 		pixel_delta_y = viewport_y / image.h;
-		upperLeftViewport = center - vec3(0, 0, focal_length) - viewport_x / 2 - viewport_y / 2;
+
+		upperLeftViewport = center - (focal_length * w) - viewport_x / 2 - viewport_y / 2;
 		pixel00_loc = upperLeftViewport + 0.5 * (pixel_delta_x + pixel_delta_y);
+
 		pixel_samples_scale = 1.0 / SAMPLES_PER_PIXEL;
 	}
 
@@ -47,6 +66,9 @@ public:
 	}
 private:
 	float focal_length = 1.0;
+	point3 lookfrom = point3(0, 0, 0);   // Point camera is looking from
+	point3 lookat = point3(0, 0, -1);  // Point camera is looking at
+	vec3   vup = vec3(0, 1, 0);     // Camera-relative "up" direction
 	Dimension viewport;
 	point3 center{ 0,0,0 };
 	vec3 viewport_x;
@@ -55,12 +77,12 @@ private:
 	vec3 pixel_delta_y;
 	vec3 upperLeftViewport;
 	vec3 pixel00_loc;
-	float pixel_samples_scale;  // Color scale factor for a sum of pixel samples
+	float pixel_samples_scale;
+
+	float v_fov = 90.0f;
+	vec3   u, v, w;
 	
 	ray get_ray(int i, int j) const {
-		// Construct a camera ray originating from the origin and directed at randomly sampled
-		// point around the pixel location i, j.
-
 		auto offset = sample_square();
 		auto pixel_sample = pixel00_loc
 			+ ((i + offset.x) * pixel_delta_x)

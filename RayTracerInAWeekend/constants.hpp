@@ -14,7 +14,7 @@ static constexpr auto ASPECT_RATIO = 16.0 / 9.0;
 static constexpr auto SAMPLES_PER_PIXEL = 100;
 static constexpr float INF = std::numeric_limits<float>::infinity();
 static constexpr float PI = 3.1415926535897932385f;
-static constexpr float MAX_DEPTH = 50;
+static constexpr auto MAX_DEPTH = 50;
 
 
 inline float degrees_to_radians(float degrees) { return degrees * PI / 180.0; }

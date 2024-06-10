@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:material.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:material.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\constants.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:constants.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8287976A-3333-4C08-B9A6-1B64D75F02B6}|RayTracerInAWeekend.vcxproj|solutionrelative:vec3.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,12 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "camera.hpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp",
+              "RelativeDocumentMoniker": "camera.hpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\camera.hpp",
+              "RelativeToolTip": "camera.hpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-10T01:38:04.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "material.hpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp",
               "RelativeDocumentMoniker": "material.hpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\material.hpp",
               "RelativeToolTip": "material.hpp",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEMAAABHAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-09T16:06:09.572Z",
               "EditorCaption": ""
@@ -49,14 +66,14 @@
               "RelativeDocumentMoniker": "constants.hpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\constants.hpp",
               "RelativeToolTip": "constants.hpp",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABkAAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-09T14:51:14.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "vec3.hpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\vec3.hpp",
               "RelativeDocumentMoniker": "vec3.hpp",
@@ -64,8 +81,7 @@
               "RelativeToolTip": "vec3.hpp",
               "ViewState": "AQIAACEAAAAAAAAAAAAjwC8AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-09T10:20:43.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T10:20:43.909Z"
             },
             {
               "$type": "Document",
@@ -75,7 +91,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RayTracerInAWeekend\\RayTracerInAWeekend\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-08T02:21:41.859Z",
               "EditorCaption": ""
