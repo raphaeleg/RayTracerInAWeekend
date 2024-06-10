@@ -14,7 +14,7 @@ struct Dimension
 
 class camera {
 public:
-	float img_width = 400;
+	float img_width = 1200;
 	Dimension image{ img_width, float(fmax(1, int(img_width / ASPECT_RATIO))) };
 
 	camera(point3 lf, point3 la, vec3 vu, float vf, float defocus_angle, float focus_d) {
@@ -85,7 +85,7 @@ private:
 	vec3 pixel00_loc{ 0.0f };
 	float pixel_samples_scale = float(1.0f / SAMPLES_PER_PIXEL);
 
-	float v_fov = 90.0f;
+	float v_fov = 20.0f;
 	vec3 u{ 0.0f };
 	vec3 v{ 0.0f };
 	vec3 w{ 0.0f };
